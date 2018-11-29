@@ -46,3 +46,16 @@ console.log(a, b) // [1, 2]
 
 const [a, b,,, c] = [1, 2, 3, 4, 5, 6]
 console.log(a, b, c)// [1, 2, 5]
+
+//#using rest operator to reassign the array elements
+
+const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function removeTheFirstTwo(list) {
+const [a, b, ...arr] = list;
+return arr;
+}
+const arr = removeTheFirstTwo(source);
+console.log(arr);
+console.log(source)
+
+
