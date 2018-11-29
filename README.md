@@ -59,3 +59,21 @@ console.log(arr);
 console.log(source)
 
 
+//#use destructuring to pass an object as parameters
+const stats = {
+max: 90,
+min: 80,
+median: 85,
+standard_aviation: 81,
+mode: 50,
+average: 82,
+}
+
+const half = (() => {
+return ((max, min) => {
+  return (max + min) / 2.0;
+  });
+})();
+
+console.log(stats)
+console.log(half(stats))
